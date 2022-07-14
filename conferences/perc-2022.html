@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is your bias my bias? | 🌌 Astra Sword.github.io</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            width: 100%;
+            overflow: auto;
+            line-height: 1.3;
+        }
+
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            --brand-colour-ou-main: #1E4B9B;
+            --access-colour-white: #FAFAFA;
+            font-size: 18px;
+            background-color: var(--access-colour-white);
+        }
+    
+        .title-card, .dark {
+            background-color: var(--brand-colour-ou-main);
+            color: var(--access-colour-white);
+        }
+
+        .content {
+            margin: auto;
+            max-width: 70ch;
+            padding: 1em;
+        }
+
+        .title {
+            font-size: 5em;
+            margin-top: 1em;
+        }
+
+        .subtitle {
+            margin-top: 1em;
+            font-size: 1.5em;
+        }
+
+        .site-badge {
+            position: absolute;
+            top: 0.5ch;
+        }
+
+        .site-badge > h1 >  a {
+            color: var(--access-colour-white);
+            text-decoration: none;
+            font-weight: normal;
+        } 
+
+        h2 {
+            font-weight: normal;
+        }
+
+        p {
+            margin-top: 1em;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        .i {
+            font-style: italic;
+        }
+
+        dl {
+            margin-top: 1em;
+        }
+
+        h3 {
+            margin-top: 1em;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .maths {
+            text-align: center;
+            padding: 1em;
+            font-style: italic;
+        }
+
+        .darker {
+            background-image: none !important;
+            background-color: #0F264E;
+
+        }
+
+        section > .content > *:first-child {
+            margin-top: 0;
+        }
+
+        img.result-graph {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            display: block;
+        }
+
+        .star {
+            padding-left: 0.5ch;
+            transform: rotate(12deg);
+        }
+        section.dark, .title-card {
+            background-image: url('/img/perc2022/background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        dl.key-results > * {
+            margin-top: 0.5em;
+        }
+
+        dl.key-results > dt.i {
+            margin-top: 1em;
+        }
+    </style>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌌</text></svg>">
+</head>
+<body>
+    <header class="site-badge">
+        <h1><a href="/"><span class="star">🌌</span> <strong>Astra Sword</strong><code>.github.io</code></a></h1>
+    </header>
+    <main>
+        <header class="title-card">
+            <div class="content">
+                <h1 class="title">Is my bias<br>your bias?</h1>
+                <p>We investigated bias in academic outcomes for UK physics degrees (2012/13&nbsp;to&nbsp;2019/20)</p>
+            </div>
+        </header>
+        <section class="introduction">
+            <div class="content">
+                <h2 class="subtitle">
+                    <strong>Is my bias your bias?:<br></strong>
+                    The variability of demographic gaps in the good degree rate for UK physics degree programmes
+                </h2>
+                <dl>
+                    <dt>Presenter</dt>
+                    <dd>Astra Sword (astra[dot]sword[at]open.ac.uk)</dd>
+                    <dt>Supervisors</dt>
+                    <dd>Sally Jordan and Annika Lohstroh</dd>
+                </dl>
+                <h3>Motivation</h3>
+                <p>
+                    In the United Kingdom (UK), demographic gaps in the
+                    rate at which graduates from different backgrounds are
+                    awarded the top academic outcomes (i.e., degrees
+                    graded 1st or 2:1; a.k.a. <strong>the good degree rate</strong>) are
+                    important measures of equity for the higher education
+                    (HE) sector [1].
+                </p>
+            </div>
+        </section>
+        <section class="research-questions dark">
+            <div class="content">
+                <h3>Research Questions</h3>
+                <dl>
+                    <dt>Research Question 1</dt>
+                    <dd>How similar are outcome gaps across different physics courses?</dd>
+                    <dt>Research Question 2</dt>
+                    <dd>How do the outcome gaps in physics compare to other subjects?</dd>
+                </dl>
+            </div>
+        </section>
+        <section class="data-and-methods">
+            <div class="content">
+                <h3>Data and Methods</h3>
+                <p>
+                    We procured a Large, National Degree Outcome
+                    dataset (<strong>LaNDO</strong>) from HESA [2]. This dataset includes
+                    all first-degree students in higher education from
+                    2012/13 through to 2019/20. We used the IOP’s degree
+                    accreditation registers for the same time period [3] to
+                    identify accredited physics degrees programmes,
+                    highlighted in green in the results.
+                </p>
+                <p>
+                    For each characteristic, we calculated the risk
+                    difference Δ in the good degree rate according to:
+                </p>
+                <p class="maths">
+                    Δ = P(G|¬M) - P(G|M)
+                </p>
+                <p>
+                    Where 𝐺 is the event of obtaining a good degree and 𝑀
+                    is the event of belonging to the majority (modal) group.
+                    To avoid distortions due to COVID-19, we calculated
+                    results for 2019/20 separately, indicated by a *; all other
+                    results are for 2012/13 to 2018/19.
+                </p>
+                <h4>Within Physics</h4>
+                <p>
+                    We calculated the weighted (by cohort
+                    size) mean of risk differences across years for each
+                    accredited physics programme. To ensure data
+                    protection, programmes with fewer than 23 students
+                    were excluded from the analysis [4].
+                </p>
+                <h4>Across Subjects</h4>
+                <p>
+                    We calculated risk difference for all
+                    students on accredited physics degrees; then grouped
+                    by subject code (given in brackets) [5]; science,
+                    engineering, technology subject status; and at the
+                    sector level. We calculate 95% confidence intervals via
+                    the Newcombe score method [6].
+                </p>
+            </div>
+        </section>
+        <section class="results dark darker">
+            <div class="content">
+                <h3>Results</h3>
+                <h4>Non-Enhanced Degrees</h4>
+                <p>
+                    Non-enhanced degrees are degrees that typically take three
+                    years to complete and result in a batchelor's level
+                    qualification.
+                </p>
+            </div>
+            <div class="wide-content">
+                <img class="result-graph" src="/img/perc2022/all-results.png" alt="" tabindex="0"> 
+            </div>
+            <div class="content">
+                <dl class="key-results">
+                    <dt class="i">Gender</dt>
+                    <dd>
+                        In line with the rest of UK HE, women are more likely to
+                        gain a good degree in physics, but are disadvantaged on
+                        specific programmes.
+                    </dd>
+                    <dt class="i">Ethnicity (UK-Domicile Only)</dt>
+                    <dd>
+                        The award gap for non-white students in physics is
+                        smaller than in the sector, but several physics
+                        programmes have gaps larger than the sector average.
+                    </dd>
+                    <dt class="i">Disability Status</dt>
+                    <dd>
+                        In contrast to the sector, physics students with a
+                        disability marker are generally much less likely to
+                        obtain a good degree.
+                    </dd>
+                    <dt class="i">Age on Entry</dt>
+                    <dd>
+                        Award gaps across age categories are highly dispersed in
+                        physics, with some much larger programme gaps than the
+                        sector average in both directions.
+                    </dd>
+                </dl>
+            </div>
+            <div class="content">
+                <h4 id="enhanced">Enhanced Degrees ✨</h4>
+                <p>
+                    Enhanced degrees, also known as an integrated or
+                    undergraduate masters programmes are undergraduate
+                    programmes that award a masters-level qualification. They
+                    are typically the same as their non-enhanced equivalent, but
+                    with an extra year of masters' level content.
+                </p>
+            </div>
+            <div class="wide-content">
+                <img class="result-graph" src="/img/perc2022/all-results-enhanced.png" alt="" tabindex="0"> 
+            </div>
+            <div class="content">
+                <dl class="key-results">
+                    <dt class="i">Gender</dt>
+                    <dd>
+                        For enhanced degrees, the gender gap is much smaller in
+                        physics but still statistically significicant and
+                        favouring women.
+                    </dd>
+                    <dt class="i">Ethnicity (UK-Domicile Only)</dt>
+                    <dd>
+                        Similarly, for Ethnicity the award gaps for enhanced
+                        degrees are generally smaller tha those for non-enhanced
+                        degrees; except in physics!
+                    </dd>
+                    <dt class="i">Disability Status</dt>
+                    <dd>
+                        For disability status, the pattern across subjects isn't
+                        as clear for enhanced degrees as it is for batchelors
+                        level programmes; but it still points to a gap
+                        disadvantaging students with a disability marker.
+                    </dd>
+                    <dt class="i">Age on Entry</dt>
+                    <dd>
+                        Award gaps across age categories reimain highly
+                        dispersed and of a similar size for enhanced degrees in
+                        physics; but larger across all the other subject areas
+                        examined.
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <section class="discussion">
+            <div class="content">
+                <h3>Discussion</h3>
+                <p>
+
+                    For each demographic characteristic examined, we find the
+                    gaps in degree outcomes to be <strong>surprisingly
+                    hetergenous</strong>, with substantial gaps in both
+                    directions when looking at outcomes for specific
+                    institutions. Below we indicate two statistical issues that may
+                    explain the observed heterogeneity within physics and
+                    discrepancy between subjects.
+                </p>
+            </div>
+        </section>
+
+        <section class="future-work dark">
+            <div class="content">
+                <h3>Future Work</h3>
+                <p>
+
+                    Our next steps will be to generalise this analysis to more
+                    characteristics and analyse the dispersion of physics degree
+                    outcomes. More broadly, we are working towards building an
+                    multinomial regression model that takes into account
+                    intersectionality, causal inference, and the possibility of
+                    over/under-dispersion.
+                </p>
+            </div>
+        </section>
+
+        <section class="references">
+            <div class="content">
+                <h3>References</h3>
+                <ul style="font-size: 0.75em; margin-top: 1em;">
+                    <li>[1] Office for Students. (2021, March 11). Participation performance measures—Office for Students (Worldwide). Office for Students.
+                    https://www.officeforstudents.org.uk/about/measures-of-our-success/participation-performance-measures/</li>
+                    <li>[2] Jisc. (2022). Tailored datasets. Jisc.
+                    https://www.jisc.ac.uk/tailored-datasets</li>
+                    <li>[3] Institute of Physics. (2022). Degree accreditation and recognition. Degree Accreditation and Recognition | Institute of Physics.
+                    https://www.iop.org/education/support-work-higher-education/degree-accreditation-recognition</li>
+                    <li>[4] HESA. (2022). Rounding and suppression to anonymise statistics | HESA.
+                    https://www.hesa.ac.uk/about/regulation/data-protection/rounding-and-suppression-anonymise-statistics</li>
+                    <li>[5] HESA. (2012). JACS 3.0: Principal subject codes.
+                    https://www.hesa.ac.uk/support/documentation/jacs/jacs3-principal</li>
+                    <li>[6] Seabold, S., & Perktold, J. (2010). statsmodels: Econometric and statistical modeling with python. 9th Python in Science Conference.
+                    https://www.statsmodels.org/devel/generated/statsmodels.stats.proportion.confint_proportions_2indep.html</li>
+                    <li>[7] UCAS. (2014, October 13). Mature undergraduate students. UCAS.
+                    https://www.ucas.com/undergraduate/applying-university/mature-undergraduate-students</li>
+                    <li>[8] Dean, C. B., & Lundy, E. R. (2016). Overdispersion. In Wiley StatsRef: Statistics Reference Online (pp. 1–9). American Cancer Society.
+                    https://doi.org/10.1002/9781118445112.stat06788.pub2</li>
+                    <li>[9] Hernán, M. A., Clayton, D., & Keiding, N. (2011). The Simpson’s paradox unraveled. International Journal of Epidemiology, 40(3), 780–785.
+                    https://doi.org/10.1093/ije/dyr041</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
